@@ -15,7 +15,7 @@ const triangleJuge = function(args) {
                     output = '直角三角形'
                 } else if (args[0] === args[1] && args[1] === args[2]) {
                     output = '等边三角形'
-                } else if ((args[0] === args[1] && args[1] !== args[2]) || (args[1] === args[2] && args[1] !== args[0])) {
+                } else if (args[0] === args[1] || args[1] === args[2]) {
                     output = '等腰三角形'
                 } else {
                     output = '常规三角形'
